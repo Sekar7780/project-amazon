@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: white
+}
+.top-nav{
+    height: 60px;
+    background-color: #131921;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.nav-logo{
+    width: 110px;
+}
+.nav-logo img{
+    width: 100%;
+}
+/****location box*****/
+.location-icon{
+    display: flex;
+    align-items: center;
+}
+.location-first{
+    margin-left: 20px;
+    font-size: 0.9vw;
+}
+.location-second{
+    font-size: 1.2vw;
+    font-weight: 700;
+}
+.location-icon i{
+    font-size: 1.4vw;
+    margin-right: 5px;
+}
+/*****Search box*****/
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    height: 40px;
+    width: 600px;
+    border: 0;
+    outline: none;
+}
+.category{
+    width: 52px;
+    text-align: center;
+    font-size: 1vw;
+    border: 0;
+    outline: none;
+    background-color: #ece6e6;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.Search-input{
+    width: 100%;
+    border: 0;
+    outline: none;
+    font-size: 1.2vw;
+    padding-left: 5px;
+}
+.Search-icon{
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 1.2vw;
+    background-color: rgb(235, 182, 84);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+/*****Sign in*****/
+.nav-signin{
+    padding: 0 9px;
+    font-weight: 600;
+}
+/*****Orders*****/
+.nav-Orders{
+    padding: 0 9px;
+}
+/*****CART*****/
+.nav-cart{
+    display: flex;
+    align-items: center;
+}
+.nav-cart i{
+    font-size: 2.2vw;
+}
+/*****Bottom navbar*****/
+.bottom-nav{
+    background-color: #232f3e;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 0 60px;
+    width: 100%;
+}
+.bnav-left{
+    display: flex;
+    align-items: center;
+}
+.options{
+    display: flex;
+}
+.bnav-left,.all{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+.bnav-left,.all i{
+    font-size: 1.5vw;
+    margin-right: 5px;
+}
+.bnav-left,.all p{
+    font-size: 1.5vw; 
+}
+.bnav-left .options a{
+    text-decoration: none;
+    font-size: 1.1vw;
+    margin: 0 8px;
+}
+.bnav-right{
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+/***** content img*****/
+.content img{
+    width: 100%;
+}
+.image-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    background-color:rgb(215, 222, 228);
+    padding: 40px 20px;
+}
+.image{
+      padding: 20px;
+      background-color: white;
+}
+.image img{
+    width: 200px;
+    height: 225px;
+    padding: 5px;
+}
+.image :nth-child(3){
+    font-size:small;
+    font-weight: 700;
+    color: rgb(10, 10, 245)
+}
+.image :first-child{
+    font-size: 1.2vw;
+    font-weight: 700;
+}
+/*****Back to top*****/
+.back-top{
+    background-color: #232f3e;
+    height: 50px;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+}
+.last-container{
+    display: flex;
+    justify-content: space-around;
+    background-color: #1f2731;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+.container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.heading{
+    margin-bottom: 20px;
+}
+@media only screen and (max-width: 600px) {
+    .nav-location{
+        display: none;
+    }
+    .nav-search select{
+        display: none;
+    }
+    .nav-Orders{
+        display: none;
+    }
+    .Search-icon{
+        
+        font-size: 5vw;
+    }
+    .Search-input{
+        font-size: 4vw;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+    .nav-logo img{
+        width: 300%;
+    }
+    .nav-search {
+        margin-left: 65px;
+    }
+    .nav-cart i{
+        font-size: 6vw;
+    }
+    .nav-signin{
+        font-size: 14px;
+        font-weight: 200;
+    }
+    .bnav-left,.all i{
+        font-size: 5vw; 
+        margin-right: 10px;
+    }
+    .bnav-left,.all p{
+        font-size: 5vw;
+        font-size: 16px; 
+        text-decoration: none;
+    }
+    .bnav-left .options a{
+        text-decoration: none;
+        font-size: 3vw;
+        margin: 0 8px;
+    }
+    .bottom-nav{
+        padding: 5px;
+        margin: 5px;
+    }
+    
+}
